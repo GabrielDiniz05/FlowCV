@@ -14,11 +14,11 @@ Este projeto tem como foco automatizar o processo de preenchimento, entrega e co
 ### Tecnologias:
 <div>
 
-Linguagem:<img align="left" alt="Java" width="35px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg" /> Java - Framework: Springboot
+    <p>Linguagem:<img align="left" alt="Java" width="35px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg" /> Java - Framework: Springboot</p>
 
-Linguagem: <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" /> JavaScript - Framework: ReactJS
+    <p>Linguagem: <img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" /> JavaScript - Framework: ReactJS</p>
 
-Banco de Dados: PostgreSQL
+    Banco de Dados: PostgreSQL
 
 </div>
 
