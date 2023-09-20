@@ -1,0 +1,3 @@
+CREATE USER admin WITH SUPERUSER PASSWORD 'admin';
+CREATE USER flowcvuser PASSWORD 'senha';
+CREATE DATABASE dbflowcv OWNER flowcvuser;
