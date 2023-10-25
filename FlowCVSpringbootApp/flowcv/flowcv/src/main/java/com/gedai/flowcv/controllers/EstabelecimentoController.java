@@ -52,7 +52,7 @@ public class EstabelecimentoController {
         return ResponseEntity.status(HttpStatus.OK).body(estabelecimentoRepository.save(estabelecimento));
     }
 
-    @DeleteMapping("/products/{id}")
+    @DeleteMapping("/estabelecimentos/{id}")
     public ResponseEntity<Object> deleteEstabelecimento(@PathVariable(value = "id") Integer id){
         Optional<Estabelecimento> productO = estabelecimentoRepository.findById(id);
         if(productO.isEmpty()){
