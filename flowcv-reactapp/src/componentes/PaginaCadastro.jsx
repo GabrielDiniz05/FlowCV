@@ -3,7 +3,7 @@ import React from 'react'
 function PaginaCadastro() {
     return (
         <div id='Pagina-Cadastro'>
-            <div id='Container-Form' className="container-md p-5 mt-5 border border-light-subtle">
+            <div id='Container-Form' className="container p-5 mt-5 border rounded">
                 <h1>Cadastrar-se</h1>
                 <form id='Form-Cadastro'>
 
@@ -56,10 +56,10 @@ function PaginaCadastro() {
                             </div>
                         </div>
                     </div>
-                </form>
-                <div className='text-center m-5'>
+                <div className='text-center mt-3'>
                     <button>Salvar</button>
                 </div>
+                </form>
             </div>
         </div >
 
