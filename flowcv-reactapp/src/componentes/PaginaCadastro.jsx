@@ -2,7 +2,7 @@ import React from 'react'
 
 function PaginaCadastro() {
     return (
-        <div id='Pagina-Cadastro'>
+        <div>
             <div id='Container-Form-Cadastro' className="container p-5 mt-5 border rounded">
                 <h1 id='All-titles'>Cadastrar-se</h1>
                 <form>

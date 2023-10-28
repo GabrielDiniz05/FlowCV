@@ -19,6 +19,13 @@ body {
     text-align: center;
 }
 
+#Container-Esqueceu-Senha{
+    background-color: rgba(194, 191, 191, 0.8);
+    max-width: 25%;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    margin-top: 200px;
+}
 /*Estilo para Links*/
 #All-links{
     font-size: small;
@@ -35,7 +42,7 @@ body {
     border: solid rgba(0, 0, 0, 0.8);
     width: 50%;
     border-radius: 1ch;
-    background-color: rgba(253, 253, 253, 0.8) ;
+    background-color: rgba(253, 253, 253, 0.8);
 }
 
 #All-buttons:hover{

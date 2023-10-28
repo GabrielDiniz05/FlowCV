@@ -2,7 +2,7 @@ import React from 'react'
 
 function PaginaLogin() {
     return (
-        <div id="Pagina-Login">
+        <div>
             <h1 id='All-titles' className='text-center mt-5'>FlowCV</h1>
             <div id="Container-Form-Login" className='container p-5 mt-5 border rounded'>
                 <h1>LOGIN</h1>
