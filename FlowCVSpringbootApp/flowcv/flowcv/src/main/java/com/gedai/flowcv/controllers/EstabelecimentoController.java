@@ -20,19 +20,19 @@ public class EstabelecimentoController {
     EstabelecimentoRepository estabelecimentoRepository;
 
     @PostMapping("/estabelecimentos")
-    public ResponseEntity<EstabelecimentoModel> saveProduct(@RequestBody @Valid EstabelecimentoDto estabelecimentoDto){
+    public ResponseEntity<EstabelecimentoModel> saveEstabelecimentos(@RequestBody @Valid EstabelecimentoDto estabelecimentoDto){
         var estabelecimentoModel = new EstabelecimentoModel();
         BeanUtils.copyProperties(estabelecimentoDto, estabelecimentoModel);
         return ResponseEntity.status(HttpStatus.CREATED).body(estabelecimentoRepository.save(estabelecimentoModel));
     }
 
     @GetMapping("/estabelecimentos")
-    public ResponseEntity<List<EstabelecimentoModel>> getAllProducts(){
+    public ResponseEntity<List<EstabelecimentoModel>> getAllEstabelecimentos(){
         return ResponseEntity.status(HttpStatus.OK).body(estabelecimentoRepository.findAll());
     }
 
     @GetMapping("/estabelecimentos/{id}")
-    public ResponseEntity<Object> getProduct(@PathVariable(value = "id") Integer id){
+    public ResponseEntity<Object> getEstabelecimentos(@PathVariable(value = "id") Integer id){
         Optional<EstabelecimentoModel> estabelecimentoO = estabelecimentoRepository.findById(id);
         if(estabelecimentoO.isEmpty()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Estabelecimento não encontrado.");
@@ -41,24 +41,24 @@ public class EstabelecimentoController {
     }
 
     @PutMapping("/estabelecimentos/{id}")
-    public ResponseEntity<Object> updateProduct(@PathVariable(value = "id") Integer id, @RequestBody @Valid EstabelecimentoDto estabelecimentoDto){
+    public ResponseEntity<Object> updateEstabelecimentos(@PathVariable(value = "id") Integer id, @RequestBody @Valid EstabelecimentoDto estabelecimentoDto){
 
         Optional<EstabelecimentoModel> estabelecimentoO = estabelecimentoRepository.findById(id);
         if(estabelecimentoO.isEmpty()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Estabelecimento não encontrado.");
         }
-        var productModel = estabelecimentoO.get();
-        BeanUtils.copyProperties(estabelecimentoDto, productModel);
-        return ResponseEntity.status(HttpStatus.OK).body(estabelecimentoRepository.save(productModel));
+        var estabelecimentoModel = estabelecimentoO.get();
+        BeanUtils.copyProperties(estabelecimentoDto, estabelecimentoModel);
+        return ResponseEntity.status(HttpStatus.OK).body(estabelecimentoRepository.save(estabelecimentoModel));
     }
 
     @DeleteMapping("/estabelecimentos/{id}")
-    public ResponseEntity<Object> deleteProduct(@PathVariable(value = "id") Integer id){
-        Optional<EstabelecimentoModel> productO = estabelecimentoRepository.findById(id);
-        if(productO.isEmpty()){
+    public ResponseEntity<Object> deleteEstabelecimentos(@PathVariable(value = "id") Integer id){
+        Optional<EstabelecimentoModel> estabelecimentoO = estabelecimentoRepository.findById(id);
+        if(estabelecimentoO.isEmpty()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Estabelecimento não encontrado.");
         }
-        estabelecimentoRepository.delete(productO.get());
+        estabelecimentoRepository.delete(estabelecimentoO.get());
         return ResponseEntity.status(HttpStatus.OK).body("Estabelecimento excluído com sucesso.");
     }
 }
