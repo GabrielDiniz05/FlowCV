@@ -14,15 +14,17 @@ function SideBarMenu() {
           <ul class="nav nav-pills flex-column">
             <li class="nav-item text-white fs-4 my-1">
               <a href="#" class="nav-link text-white fs-5" aria-current="page">
-                <i className='bi bi-speedometer2'></i>
-                <span className='ms-2'>Formulários</span>
+              <i class="bi bi-archive-fill"></i>
+                <span id='All-spans' className='ms-2'>Formulários</span>
               </a>
+              <hr />
             </li>
             <li class="nav-item text-white fs-4 my-1">
               <a href="#" class="nav-link text-white fs-5" aria-current="page">
-                <i className='bi bi-house'></i>
-                <span className='ms-2'>Vagas</span>
+              <i class="bi bi-briefcase-fill"></i>
+                <span id='All-spans' className='ms-2'>Vagas</span>
               </a>
+              <hr />
             </li>
           </ul>
         </div>

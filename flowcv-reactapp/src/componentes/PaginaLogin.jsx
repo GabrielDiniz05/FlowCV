@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+ 
 function PaginaLogin() {
     return (
         <div>
@@ -19,12 +19,12 @@ function PaginaLogin() {
                 <div className="row g-5">
                     <div className="col-md-6">
                         <Link to='/register'>
-                            <a className='text-white' id='All-links'>Cadastrar-se</a>
+                            <a id='All-links'>Cadastrar-se</a>
                         </Link>
                     </div>
                     <div className="col-md-6">
                         <Link to='/reset-password'>
-                            <a className='text-white'id='All-links'>Esqueceu a senha</a>
+                            <a id='All-links'>Esqueceu a senha</a>
                         </Link>
                     </div>
                 </div>

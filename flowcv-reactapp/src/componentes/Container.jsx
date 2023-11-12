@@ -9,7 +9,7 @@ function Container() {
         </div>
         <div className="container">
           <header className='text-end'>
-            <button className='btn btn-primary m-1'>Filtrar</button>
+            <button className='btn btn-success m-1'>Filtrar</button>
             <input id='All-inputs' type="text" />
           </header>
         </div>
