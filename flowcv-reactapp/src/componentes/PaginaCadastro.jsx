@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function PaginaCadastro() {
     return (
@@ -57,7 +58,9 @@ function PaginaCadastro() {
                     </div>
                     <br />
                 <div className='text-center'>
-                    <button id='All-buttons'>Salvar</button>
+                    <Link to='/'>
+                        <button id='All-buttons'>Salvar</button>
+                    </Link>
                 </div>
                 </form>
             </div>

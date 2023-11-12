@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function PaginaEsqueceuSenha() {
   return (
@@ -7,7 +8,11 @@ function PaginaEsqueceuSenha() {
             <h1 id="All-titles">Esqueceu a senha?</h1>
             <p>Insira seu email para enviarmos a redefinição de senha:</p>
             <input className='form-control' type="text" />
-            <div className='container text-center mt-4'><button id='All-buttons'>Enviar</button></div>
+            <div className='container text-center mt-4'>
+              <Link to='/'>
+                <button id='All-buttons'>Enviar</button>
+              </Link>
+            </div>
         </div>
     </div>
   )
