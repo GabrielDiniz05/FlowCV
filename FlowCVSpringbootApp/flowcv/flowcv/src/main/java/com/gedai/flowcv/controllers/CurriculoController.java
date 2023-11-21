@@ -1,12 +1,8 @@
 package com.gedai.flowcv.controllers;
 import com.gedai.flowcv.dtos.CurriculoDto;
-import com.gedai.flowcv.dtos.EstabelecimentoDto;
 import com.gedai.flowcv.models.CurriculoModel;
-import com.gedai.flowcv.models.EstabelecimentoModel;
 import com.gedai.flowcv.repositories.CurriculoRepository;
-import com.gedai.flowcv.repositories.EstabelecimentoRepository;
 import jakarta.validation.Valid;
-import org.apache.coyote.Response;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
