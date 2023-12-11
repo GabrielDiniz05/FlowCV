@@ -1,14 +1,10 @@
 # Run docker:  docker build -t dbpgsql .
-FROM postgres:14.3
+FROM node:14
 
-RUN localedef -i pt_BR -c -f UTF-8 -A /usr/share/locale/locale.alias pt_BR.UTF-8
+WORKDIR /app-node
 
-ENV POSTGRES_PASSWORD=senha
-ENV LANG=pt_BR.utf8
-ENV PGDATA=/var/lib/postgresql/data/pgdata
+COPY . .
 
-VOLUME [ "pgdata:/var/lib/postgresql/data/pgdata" ]
+RUN npm install 
 
-COPY ./schema.sql /docker-entrypoint-initdb.d/
-
-EXPOSE 5432
+ENTRYPOINT npm start
